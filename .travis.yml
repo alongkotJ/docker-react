@@ -11,10 +11,10 @@ before_install:
 # Due to a change in how the Jest library works with Create React App, 
 # we need to make a small modification:
 # 
-script:
-  - docker run jamespool/docker-react npm run test -- --coverage
+# script:
+#   - docker run jamespool/docker-react npm run test -- --coverage
 # 
 # instead should be:
 # 
-# script:
-#   - docker run -e CI=true jamespool/docker-react npm run test
+script:
+  - docker run -e CI=true jamespool/docker-react npm run test
